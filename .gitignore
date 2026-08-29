@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+find_a11y.js
+lh-home-desktop.json
+lh-home-mobile.json
+optimize-images.js
+parse_lh.js
+replace_ext.js
+replace_motion.js
