@@ -124,7 +124,7 @@ export default function Footer() {
                 </div>
               </a>
 
-              <a href="https://wa.me/919363227147" target="_blank" rel="noopener noreferrer" aria-label="Chat with our experts on WhatsApp" className="group flex items-start gap-4 cursor-pointer transition-all">
+              <a href="https://wa.me/919344039068" target="_blank" rel="noopener noreferrer" aria-label="Chat with our experts on WhatsApp" className="group flex items-start gap-4 cursor-pointer transition-all">
                 <div className="w-10 h-10 rounded-full border border-gray-800 bg-gray-900 flex items-center justify-center flex-shrink-0 text-[#3FAE49] group-hover:bg-[#3FAE49]/10 group-hover:border-[#3FAE49] transition-all">
                   <MessageCircle className="w-4 h-4" />
                 </div>

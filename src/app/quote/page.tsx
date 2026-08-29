@@ -305,8 +305,8 @@ export default function QuotePage() {
               </ul>
 
               <div className="flex flex-col gap-4">
-                <a 
-                  href="https://wa.me/919363227147?text=Hi%20EvenVibe%20Uniforms%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20uniforms."
+                <a
+                  href="https://wa.me/919344039068?text=Hi%20EvenVibe%20Uniforms%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20uniforms."
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Chat with EvenVibe Uniforms on WhatsApp"
@@ -315,7 +315,7 @@ export default function QuotePage() {
                   <MessageCircle className="w-5 h-5 group-hover:-rotate-12 transition-transform" />
                   WHATSAPP US
                 </a>
-                <a 
+                <a
                   href="tel:+919363227147"
                   aria-label="Call EvenVibe Uniforms"
                   className="w-full bg-white border-2 border-gray-200 hover:border-[#111827] hover:text-[#111827] text-gray-600 py-4 rounded-xl font-black text-[13px] uppercase tracking-widest transition-all flex items-center justify-center gap-2"
