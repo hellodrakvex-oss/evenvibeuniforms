@@ -134,13 +134,13 @@ export default function Footer() {
                 </div>
               </a>
 
-              <a href="mailto:hello@evenvibe.com" aria-label="Email hello@evenvibe.com" className="group flex items-start gap-4 cursor-pointer transition-all">
+              <a href="mailto:dkjapparels@gmail.com" aria-label="Email dkjapparels@gmail.com" className="group flex items-start gap-4 cursor-pointer transition-all">
                 <div className="w-10 h-10 rounded-full border border-gray-800 bg-gray-900 flex items-center justify-center flex-shrink-0 text-[#3FAE49] group-hover:bg-[#3FAE49]/10 group-hover:border-[#3FAE49] transition-all">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
                   <div className="text-[10px] text-gray-500 font-bold uppercase tracking-widest mb-1">EMAIL</div>
-                  <div className="text-[14px] text-white font-medium group-hover:text-[#3FAE49] transition-colors">hello@evenvibe.com</div>
+                  <div className="text-[14px] text-white font-medium group-hover:text-[#3FAE49] transition-colors">dkjapparels@gmail.com</div>
                 </div>
               </a>
 
