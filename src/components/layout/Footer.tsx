@@ -75,7 +75,7 @@ export default function Footer() {
               <div className="w-1.5 h-1.5 rounded-full bg-[#3FAE49]" /> QUICK LINKS
             </h4>
             <ul className="flex flex-col gap-3">
-              {['Home', 'About', 'Uniforms', 'Gallery', 'Instagram', 'Contact'].map(link => (
+              {['Home', 'About', 'Uniforms', 'Clients', 'Instagram'].map(link => (
                 <li key={link}>
                   <Link href={`/#${link.toLowerCase()}`} className="text-gray-400 text-[14px] font-medium hover:text-[#3FAE49] transition-colors flex items-center gap-2 group">
                     <span className="w-0 h-[1px] bg-[#3FAE49] transition-all duration-300 group-hover:w-3" />
