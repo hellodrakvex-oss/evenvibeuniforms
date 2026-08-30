@@ -22,7 +22,7 @@ const corporateClients: ClientType[] = [
   { name: "INDIAN NAVY", shortName: "INDIAN NAVY", color: "text-[#1C325B]", font: "font-serif font-bold tracking-widest", isNavy: true, logo: "/images/logo/corporate/indian navy.PNG" },
   { name: "PART TIMER", shortName: "PART TIMER", color: "text-[#111827]", font: "font-black tracking-wider", logo: "/images/logo/corporate/part timer.PNG" },
   { name: "SWIGGY", shortName: "SWIGGY", color: "text-[#111827]", font: "font-black italic", logo: "/images/logo/corporate/swiggy.PNG" },
-  { name: "ZOMATO", shortName: "ZOMATO", color: "text-[#00529B]", font: "font-bold tracking-tight", logo: "/images/logo/corporate/zomato.PNG" }
+  { name: "ZOMATO", shortName: "ZOMATO", color: "text-[#00529B]", font: "font-bold tracking-tight", logo: "/images/logo/corporate/Zomato.PNG" }
 ];
 
 const schoolClients: ClientType[] = [
