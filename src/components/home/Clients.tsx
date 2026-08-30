@@ -34,7 +34,7 @@ const schoolClients: ClientType[] = [
   { name: "Nachiyar Montessori School", shortName: "NACHIYAR MONTESSORi", color: "text-[#111827]", logo: "/images/logo/school/nachiyar montessori school.PNG" },
   { name: "Nachiyar Padasalai", shortName: "NACHIYAR PADASALAI", color: "text-[#111827]", logo: "/images/logo/school/nachiyar padasala school.PNG" },
   { name: "Raja Ravi Varma School", shortName: "RAJA RAVI VARMA", color: "text-[#111827]", logo: "/images/logo/school/raja ravi school.PNG" },
-  { name: "St. joseph's Matriculations School", shortName: "ST. JOSEPH'S", color: "text-[#111827]", logo: "/images/logo/school/st joseph's school.png" },
+  { name: "St. joseph's Matriculations School", shortName: "ST. JOSEPH'S", color: "text-[#111827]", logo: "/images/logo/school/st.joseph school.PNG" },
   { name: "Sowma Matriculation School", shortName: "SOWMYA", color: "text-[#111827]", logo: "/images/logo/school/sowma school.PNG" },
   { name: "Sri Vignesh School", shortName: "SRI VIGNESH", color: "text-[#111827]", logo: "/images/logo/school/sri vignesh school.PNG" },
   { name: "Vriksham School", shortName: "VRIKSHAM", color: "text-[#111827]", logo: "/images/logo/school/vriksham school.PNG" },

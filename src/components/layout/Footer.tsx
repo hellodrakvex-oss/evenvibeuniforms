@@ -150,7 +150,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <div className="text-[10px] text-gray-500 font-bold uppercase tracking-widest mb-1">LOCATION</div>
-                  <div className="text-[14px] text-white font-medium group-hover:text-[#3FAE49] transition-colors">DKJ APPARELS, 20th, Azer Nagar, SAP Theatre Backside, Avinashi Road,<br /> Tirupur – 641603 </div>
+                  <div className="text-[14px] text-white font-medium group-hover:text-[#3FAE49] transition-colors">DKJ APPARELS,<br /> 20th, Azer Nagar, SAP Theatre Backside, Avinashi Road,<br /> Tirupur – 641603 </div>
                 </div>
               </a>
 
