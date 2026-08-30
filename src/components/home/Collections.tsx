@@ -7,52 +7,52 @@ import Image from "next/image";
 const collectionsData = [
   {
     title: "SCHOOL UNIFORMS",
-    image: "/images/collections/school.webp",
+    image: "/images/collections/school.png",
     icon: Backpack,
   },
   {
     title: "COLLEGE UNIFORMS",
-    image: "/images/collections/college.webp",
+    image: "/images/collections/college.png",
     icon: GraduationCap,
   },
   {
     title: "CORPORATE / OFFICE",
-    image: "/images/collections/corporate.webp",
+    image: "/images/collections/corporate.png",
     icon: Briefcase,
   },
   {
     title: "HOSPITAL UNIFORMS",
-    image: "/images/collections/hospital.webp",
+    image: "/images/collections/hospital.png",
     icon: Stethoscope,
   },
   {
     title: "HOTEL UNIFORMS",
-    image: "/images/collections/hotel.webp",
+    image: "/images/collections/hotel.png",
     icon: Bell,
   },
   {
     title: "RESTAURANT UNIFORMS",
-    image: "/images/collections/restaurant.webp",
+    image: "/images/collections/restaurant.png",
     icon: Utensils,
   },
   {
     title: "SECURITY UNIFORMS",
-    image: "/images/collections/security.webp",
+    image: "/images/collections/security.png",
     icon: Shield,
   },
   {
     title: "INDUSTRIAL / FACTORY",
-    image: "/images/collections/industrial.webp",
+    image: "/images/collections/factory.png",
     icon: Factory,
   },
   {
     title: "CHEF UNIFORMS",
-    image: "/images/collections/chef.webp",
+    image: "/images/collections/chef.png",
     icon: ChefHat,
   },
   {
     title: "EVENT UNIFORMS",
-    image: "/images/collections/event.webp",
+    image: "/images/collections/event.png",
     icon: PartyPopper,
   },
 ];
