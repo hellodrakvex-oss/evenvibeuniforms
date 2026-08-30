@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ScrollRestoration from "@/components/layout/ScrollRestoration";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -89,6 +90,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        <ScrollRestoration />
         <MotionProvider>
           <Navbar />
           <main className="flex-1">{children}</main>
