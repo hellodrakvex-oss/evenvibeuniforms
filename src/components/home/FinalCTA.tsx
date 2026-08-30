@@ -123,7 +123,7 @@ export default function FinalCTA() {
               {[
                 { title: "PREMIUM QUALITY", desc: "Finest fabrics & perfect finishing", icon: ShieldCheck },
                 { title: "ON-TIME DELIVERY", desc: "Reliable timelines, every time", icon: Clock },
-                { title: "TRUSTED BY 1000+", desc: "Schools, corporates & teams", icon: Users }
+                { title: "TRUSTED BY 200+", desc: "Schools, corporates & teams", icon: Users }
               ].map((trust, i) => (
                 <div key={i} className="flex items-center gap-4 w-full md:w-1/3 relative justify-start md:justify-center px-4">
                   {i !== 0 && (
