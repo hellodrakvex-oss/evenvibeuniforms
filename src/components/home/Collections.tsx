@@ -11,6 +11,16 @@ const collectionsData = [
     icon: Backpack,
   },
   {
+    title: "T-SHIRTS WEAR",
+    image: "/images/collections/tshirt.png",
+    icon: Backpack,
+  },
+  {
+    title: "SPORTS WEAR",
+    image: "/images/collections/sports.png",
+    icon: Backpack,
+  },
+  {
     title: "COLLEGE UNIFORMS",
     image: "/images/collections/college.png",
     icon: GraduationCap,
