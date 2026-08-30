@@ -36,9 +36,9 @@ const schoolClients: ClientType[] = [
   { name: "Raja Ravi Varma School", shortName: "RAJA RAVI VARMA", color: "text-[#111827]", logo: "/images/logo/school/raja ravi school.PNG" },
   { name: "St. joseph's Matriculations School", shortName: "ST. JOSEPH'S", color: "text-[#111827]", logo: "/images/logo/school/st joseph's school.png" },
   { name: "Sowma Matriculation School", shortName: "SOWMYA", color: "text-[#111827]", logo: "/images/logo/school/sowma school.PNG" },
-  { name: "Sri Vignesh School", shortName: "SRI VIGNESH", color: "text-[#111827]", logo: "/images/logo/school/sri vignesh school.png" },
+  { name: "Sri Vignesh School", shortName: "SRI VIGNESH", color: "text-[#111827]", logo: "/images/logo/school/sri vignesh school.PNG" },
   { name: "Vriksham School", shortName: "VRIKSHAM", color: "text-[#111827]", logo: "/images/logo/school/vriksham school.PNG" },
-  { name: "RamaKrishna School", shortName: "RAMAKRISHNA", color: "text-[#111827]", logo: "/images/logo/school/Ramakrishna school.PNG" },
+  { name: "RamaKrishna School", shortName: "RAMAKRISHNA", color: "text-[#111827]", logo: "/images/logo/school/Ramakrishna School.PNG" },
   { name: "Mount Flower English School", shortName: "MOUNT FLOWER", color: "text-[#111827]", logo: "/images/logo/school/Mount flower school.PNG" },
   { name: "CSI Ewart Global School", shortName: "CSI EWART", color: "text-[#111827]", logo: "/images/logo/school/csi ewart.PNG" },
   { name: "Mount Zion School", shortName: "MOUNT ZION", color: "text-[#111827]", logo: "/images/logo/school/mount zion.PNG" },
@@ -48,26 +48,30 @@ const schoolClients: ClientType[] = [
 
 // --- RENDER HELPERS ---
 const renderCorporate = (client: ClientType) => (
-  <div className="flex items-center justify-center gap-3 px-4 w-full h-full">
+  <div className="flex flex-col items-center justify-center text-center gap-2 px-2 w-full h-full">
     {client.logo ? (
-      <div className="relative w-full max-w-[140px] h-[60px]">
+      <div className="relative w-full max-w-[110px] h-[50px] mb-1">
         <Image src={client.logo} alt={client.name} fill className="object-contain" />
       </div>
     ) : (
       <>
-        {client.isNavy && <ShieldCheck className="w-7 h-7 text-[#1C325B]" />}
-        <span className={`text-[26px] md:text-[34px] leading-none ${client.font} ${client.color}`}>
-          {client.shortName}
-        </span>
+        {client.isNavy ? (
+          <ShieldCheck className="w-8 h-8 text-[#1C325B]" strokeWidth={1.5} />
+        ) : (
+          <Briefcase className={`w-8 h-8 ${client.color || "text-[#64748B]"}`} strokeWidth={1.5} />
+        )}
       </>
     )}
+    <span className={`text-[10px] md:text-[11px] font-bold leading-tight uppercase tracking-wider text-[#64748B] max-w-[130px]`}>
+      {client.name}
+    </span>
   </div>
 );
 
 const renderSchool = (client: ClientType) => (
   <div className="flex flex-col items-center justify-center text-center gap-2 px-2 w-full h-full">
     {client.logo ? (
-      <div className="relative w-full max-w-[90px] h-[50px] mb-1">
+      <div className="relative w-full max-w-[110px] h-[50px] mb-1">
         <Image src={client.logo} alt={client.name} fill className="object-contain" />
       </div>
     ) : (
@@ -114,7 +118,7 @@ function MarqueeCarousel({ items, renderItem, speed = "35s" }: { items: ClientTy
           {duplicatedItems.map((item, idx) => (
             <div
               key={idx}
-              className="flex-shrink-0 w-[160px] sm:w-[200px] md:w-[240px] lg:w-[260px] xl:w-[280px] h-full flex items-center justify-center border-r border-[#E5E7EB]/70 px-4 group/item"
+              className="flex-shrink-0 w-[160px] sm:w-[200px] md:w-[240px] lg:w-[220px] xl:w-[240px] h-full flex items-center justify-center border-r border-[#E5E7EB]/70 px-4 group/item"
             >
               {renderItem(item)}
             </div>
@@ -221,7 +225,7 @@ export default function Clients() {
           <MarqueeCarousel
             items={schoolClients}
             renderItem={renderSchool}
-            speed="38s"
+            speed="85s"
           />
         </m.div>
 
