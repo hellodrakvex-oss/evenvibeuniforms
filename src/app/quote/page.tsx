@@ -316,7 +316,7 @@ export default function QuotePage() {
                   WHATSAPP US
                 </a>
                 <a
-                  href="tel:+919363227147"
+                  href="tel:+919344039068"
                   aria-label="Call EvenVibe Uniforms"
                   className="w-full bg-white border-2 border-gray-200 hover:border-[#111827] hover:text-[#111827] text-gray-600 py-4 rounded-xl font-black text-[13px] uppercase tracking-widest transition-all flex items-center justify-center gap-2"
                 >
