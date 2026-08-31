@@ -40,7 +40,7 @@ export default function Navbar() {
           {/* EVENVIBE UNIFORMS Logo */}
           <Link
             href="/"
-            onClick={(e) => {
+            onClick={() => {
               if (window.location.pathname === '/') {
                 window.scrollTo(0, 0);
               }
@@ -65,7 +65,7 @@ export default function Navbar() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    onClick={(e) => {
+                    onClick={() => {
                       if (link.href === '/' && window.location.pathname === '/') {
                         window.scrollTo(0, 0);
                       }
@@ -118,7 +118,7 @@ export default function Navbar() {
                   href={link.href}
                   className={`text-[14px] font-bold py-3 border-b border-gray-50 flex items-center justify-between ${idx === 0 ? "text-[#3FAE49]" : "text-gray-800"
                     } hover:text-[#3FAE49] transition-colors`}
-                  onClick={(e) => {
+                  onClick={() => {
                     setIsMobileMenuOpen(false);
                     if (link.href === '/' && window.location.pathname === '/') {
                       window.scrollTo(0, 0);

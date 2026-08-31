@@ -217,24 +217,38 @@ export default function QuotePage() {
 
     setIsSubmitting(true);
 
+    const messageDetails = `
+Quote Request Details:
+---------------------
+Name: ${formData.fullName.trim()}
+Organisation: ${formData.organisation.trim()}
+Mobile: ${formData.mobile.replace(/[\s-]/g, "")}
+WhatsApp: ${normalizeWhatsAppNumber(formData.whatsapp) || formData.whatsapp}
+Email: ${formData.email.trim()}
+Location: ${formData.city.trim()}, ${formData.state}
+Preferred Contact: ${formData.preferredContact}
+
+Product Requirements:
+---------------------
+Uniform Types: ${selectedProducts.length ? selectedProducts.join(", ") : "None"}
+Quantity: ${formData.quantity} ${formData.unit}
+Delivery Date: ${formData.deliveryDate}
+Age/Size Categories: ${ageSizeCategories.length ? ageSizeCategories.join(", ") : "None"}
+Customisation: ${customisationOptions.length ? customisationOptions.join(", ") : "None"}
+Design Status: ${formData.hasDesign || "Not specified"}
+
+Additional Requirements:
+------------------------
+${formData.additionalRequirements.trim() || "None"}
+
+WhatsApp Updates: ${formData.whatsappUpdates ? "Yes" : "No"}
+`.trim();
+
     const templateParams = {
-      full_name: formData.fullName.trim(),
-      organisation: formData.organisation.trim(),
-      mobile: formData.mobile.replace(/[\s-]/g, ""),
-      whatsapp: normalizeWhatsAppNumber(formData.whatsapp),
+      name: formData.fullName.trim(),
       email: formData.email.trim(),
-      state: formData.state,
-      city: formData.city.trim(),
-      preferred_contact: formData.preferredContact,
-      products: selectedProducts.join(", "),
-      quantity: formData.quantity,
-      unit: formData.unit,
-      delivery_date: formData.deliveryDate,
-      age_size_categories: ageSizeCategories.join(", "),
-      customisation_options: customisationOptions.join(", "),
-      design_status: formData.hasDesign,
-      additional_requirements: formData.additionalRequirements.trim(),
-      whatsapp_updates: formData.whatsappUpdates ? "Yes" : "No",
+      message: messageDetails,
+      time: new Date().toLocaleString(),
     };
 
     try {
@@ -269,8 +283,12 @@ export default function QuotePage() {
       setErrors({});
       setTouched({});
     } catch (error) {
-      console.error(error);
-      setSubmitError("Unable to send your request right now. Please try again or contact us on WhatsApp.");
+      console.error("EmailJS Full Error Object:", error);
+      const err = error as Record<string, unknown>;
+      const errorMsg = err?.text || err?.message || "Unknown error";
+      const status = err?.status || "No status";
+      console.error(`EmailJS Failed - Status: ${status}, Text: ${errorMsg}`);
+      setSubmitError(`Unable to send your request right now. (Status: ${status}, Error: ${errorMsg})`);
     } finally {
       setIsSubmitting(false);
     }

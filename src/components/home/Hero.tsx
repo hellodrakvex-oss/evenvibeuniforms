@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { m } from 'framer-motion';
 import { Play, ArrowRight } from "lucide-react";
-import Image from "next/image";
 
 export default function Hero() {
   return (

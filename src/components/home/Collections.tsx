@@ -1,7 +1,7 @@
 "use client";
 
 import { m } from 'framer-motion';
-import { ArrowRight, Backpack, GraduationCap, Briefcase, Stethoscope, Bell, Utensils, Shield, Factory, ChefHat, PartyPopper } from "lucide-react";
+import { Backpack, GraduationCap, Briefcase, Stethoscope, Bell, Utensils, Shield, Factory, ChefHat, PartyPopper } from "lucide-react";
 import Image from "next/image";
 
 const collectionsData = [
